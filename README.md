@@ -2,6 +2,34 @@
 This project provides the metadata and the crawlers to download the PoliS dataset's texts. 
 
 
-## Structure description:
+## Dataset content
 
-`federal_deputies_twitter.xslx`: The list of Twitter accounts compiled by the non-profit organization [Auditoria Cidadã da Dívida](https://auditoriacidada.org.br/contato-dos-deputados-federais-2020-twitter/).
+### Congressional Speeches
+The congressional speeches dataset contains the transcripts of political speeches held in the [Brazilian Chamber of Deputies](https://www2.camara.leg.br/atividade-legislativa/) from January 1, 2018 to February 2, 2020.
+
+#### Political party labels
+- 25 Political parties, including `AVANTE`, `CIDADANIA`, `DEM`, `MDB`, `NOVO`, `PATRIOTA`, `PCDOB`, `PDT`, `PL`, `PMN`, `PODE`, `PP`, `PROS`, `PSB`, `PSC`, `PSD`, `PSDB`, `PSL`, `PSOL`, `PT`, `PTB`, `PV`, `REDE`, `REPUBLICANOS`, `SOLIDARIEDADE`.
+- Number of speeches: 31,101.
+
+#### Political leaning labels:
+
+| Leaning    | Political Parties | # Speeches |
+| ---------- | ----------------- |----------- |
+| Right (R)  | 11                | 11,238     |
+| Left (L)   | 8                 | 15,731     |
+| Unlabeled  | 6                 | 4,132      |
+
+
+
+## Dataset structure description:
+
+- `federal_deputies_twitter.xslx`: The list of Twitter accounts compiled by the non-profit organization [Auditoria Cidadã da Dívida](https://auditoriacidada.org.br/contato-dos-deputados-federais-2020-twitter/).
+- `political_party_leaning_decision_matrix.xlsx`: Matrix comparing [sources](#sources) labeling for estimating the political leaning of Brazilian parties.
+
+
+
+## <a name="sources"></a>Sources used to infer the political leaning of Brazilian parties:
+- [O Globo](https://blogs.oglobo.globo.com/na-base-dos-dados/post/maioria-dos-partidos-se-posiciona-como-de-centro-veja-quem-sobra-no-campo-da-direita-e-da-esquerda.html)
+- [BBC](https://www.bbc.com/portuguese/brasil-41058120)
+- [Congresso em Foco](https://congressoemfoco.uol.com.br/legislativo/direita-cresce-e-engole-o-centro-no-congresso-mais-fragmentado-da-historia/)
+- [Wikipedia](https://en.wikipedia.org/wiki/List_of_political_parties_in_Brazil)
