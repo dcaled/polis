@@ -20,6 +20,13 @@ The congressional speeches dataset contains the transcripts of political speeche
 | Unlabeled  | 6                 | 4,132      |
 
 
+### Social media messages
+
+The social media dataset was assembled by scraping a set of Twitter posts published by Brazilian political figures whose political leaning is known. To this end, we crawled
+posts from 389 Twitter profiles (144 left-aligned and 245 right-aligned) belonging to federal deputies active during 2020. 
+
+
+
 
 ## Dataset structure description:
 
